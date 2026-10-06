@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — Auto Avaliar Pro</title>
+    <style>
+        :root {
+            --bg: #0b0e14;
+            --card-bg: #131722;
+            --border: #232936;
+            --text-primary: #e6e8eb;
+            --text-secondary: #8c95a6;
+            --accent: #facc15;
+            --accent-glow: rgba(250, 204, 21, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 36px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        .brand {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        h1 { font-size: 1.8rem; font-weight: 700; color: #fff; }
+
+        .callout {
+            background-color: var(--accent-glow);
+            border-left: 4px solid var(--accent);
+            padding: 16px;
+            border-radius: 4px;
+            margin-bottom: 28px;
+        }
+
+        .callout p { color: #fef08a; font-size: 0.95rem; font-weight: 500; }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p, li { color: var(--text-secondary); font-size: 0.95rem; }
+
+        ul { padding-left: 20px; margin-bottom: 16px; }
+
+        li { margin-bottom: 8px; }
+
+        strong { color: var(--text-primary); }
+
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="brand">Logic Org • Auto Avaliar Pro v2.1.0</div>
+        <h1>Política de Privacidade</h1>
+    </div>
+
+    <div class="callout">
+        <p><strong>Privacidade em Primeiro Lugar:</strong> O Auto Avaliar Pro opera 100% no seu computador (client-side). Não possuímos servidores de coleta de dados e nenhuma informação sua é vendida, repassada ou transmitida para terceiros.</p>
+    </div>
+
+    <h2>1. Informações Processadas e Finalidade</h2>
+    <p>Para executar suas funções de automação e melhoria de interface na plataforma <code>autoavaliar.com.br</code>, a extensão faz uso dos seguintes dados:</p>
+    <ul>
+        <li><strong>Credenciais de Acesso (E-mail e Senha):</strong> Utilizadas exclusivamente pelo módulo de <em>Manutenção de Sessão / Login Automático</em> para renovar a sessão do usuário de forma transparente quando o token do sistema expira.</li>
+        <li><strong>Preferências de Interface:</strong> Opções de tema escuro, layout do painel FIPE e estado dos seletores de desempenho.</li>
+        <li><strong>Cache de Templates:</strong> Dados de renderização guardados para acelerar o carregamento de páginas.</li>
+    </ul>
+
+    <h2>2. Armazenamento de Dados</h2>
+    <p>Todos os dados processados — incluindo e-mail e senha informados pelo usuário — são armazenados <strong>estritamente de forma local no seu navegador</strong> por meio da API oficial do Google Chrome (<code>chrome.storage.local</code>).</p>
+    <ul>
+        <li>Não há tráfego de credenciais para endpoints externos.</li>
+        <li>O envio de dados de autenticação ocorre estritamente entre o seu navegador e a API oficial do <code>autoavaliar.com.br</code>.</li>
+    </ul>
+
+    <h2>3. Bloqueio de Rastreadores e Telemetria</h2>
+    <p>A extensão possui um recurso nativo para bloquear scripts de telemetria e rastreamento de terceiros (como Google Analytics, Facebook Pixel, Google Tag Manager e Powerbiz) dentro do domínio do Auto Avaliar, visando aumentar o desempenho e reforçar a privacidade da sua navegação.</p>
+
+    <h2>4. Permissões do Navegador</h2>
+    <p>As permissões solicitadas no manifesto da extensão (como <code>storage</code> e <code>declarativeNetRequest</code>) são utilizadas estritamente para salvação local de preferências e execução das regras de bloqueio de rede para melhoria de desempenho.</p>
+
+    <h2>5. Contato e Suporte</h2>
+    <p>Dúvidas ou solicitações relacionadas ao funcionamento da extensão e ao tratamento local de dados podem ser encaminhadas ao desenvolvedor responsável (Gustavo Soares / Logic Org).</p>
+
+    <footer>
+        Última atualização: Setembro de 2026 • Auto Avaliar Pro
+    </footer>
+</div>
+
+</body>
+</html>
